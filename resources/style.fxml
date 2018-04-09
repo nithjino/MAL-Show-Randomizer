@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="show_randomizer.Controller">
+   <children>
+      <ImageView fx:id="image" fitHeight="432.0" fitWidth="292.0" layoutX="39.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="synopsis" editable="false" layoutX="382.0" layoutY="125.0" prefHeight="251.0" prefWidth="501.0" wrapText="true" />
+      <Label fx:id="title" layoutX="39.0" layoutY="56.0" prefHeight="31.0" prefWidth="400.0" text="Title">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="type" layoutX="386.0" layoutY="389.0" prefHeight="15.0" prefWidth="62.0" text="Type" />
+      <PasswordField fx:id="pass" layoutX="371.0" layoutY="14.0" />
+      <Label layoutX="295.0" layoutY="19.0" text="Password:" />
+      <TextField fx:id="username" layoutX="110.0" layoutY="14.0" />
+      <Label layoutX="27.0" layoutY="19.0" text="Username:" />
+      <Button fx:id="randomBtn" layoutX="626.0" layoutY="14.0" mnemonicParsing="false" onAction="#randomize" text="Randomize" />
+      <Label fx:id="status" layoutX="387.0" layoutY="413.0" prefHeight="15.0" prefWidth="195.0" text="Status" />
+      <Label fx:id="episodes" layoutX="527.0" layoutY="439.0" text="Episodes" />
+      <Label layoutX="387.0" layoutY="439.0" text="Number of Episodes:" />
+      <Button fx:id="loginBtn" layoutX="554.0" layoutY="14.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <TextField fx:id="link" editable="false" layoutX="381.0" layoutY="95.0" prefHeight="25.0" prefWidth="501.0" />
+      <Button fx:id="loadFile" layoutX="725.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadText" text="Load File" />
+      <Button fx:id="addButton" layoutX="386.0" layoutY="458.0" mnemonicParsing="false" onAction="#addToList" prefHeight="25.0" prefWidth="170.0" text="Update MAL List" />
+      <Button fx:id="removeFile" layoutX="386.0" layoutY="488.0" mnemonicParsing="false" onAction="#removeFromFile" prefHeight="25.0" prefWidth="170.0" text="Remove from File" />
+      <Button fx:id="loadList" layoutX="810.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadUserList" text="Load List" />
+   </children>
+</Pane>
